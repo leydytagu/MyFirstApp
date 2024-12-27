@@ -1,0 +1,15 @@
+<h1>Bienvenido al curso de {{ course }}</h1>
+
+<input
+  type="text"
+  [(ngModel)]="cardData.title"
+  (input)="onTitleChange($event)"
+/>
+
+<img [src]="cardData.imageUrl" alt="Placeholder Image" />
+
+<div>
+  <h2>{{ cardData.title }}</h2>
+  <p>{{ cardData.description }}</p>
+  <button (click)="changeTitle()">Cambiar título</button>
+</div>

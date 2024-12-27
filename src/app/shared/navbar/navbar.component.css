@@ -1,0 +1,48 @@
+.navbar {
+    background-color: #1e428a;
+    /* Color de fondo */
+    padding: 15px 20px;
+    /* Espacio interno */
+    height: 60px;
+    /* Altura de la barra de navegación */
+    display: flex;
+    /* Convertir el contenedor en un flex container */
+    align-items: center;
+    /* Centrar verticalmente */
+    justify-content: space-between;
+    /* Espaciar los elementos horizontalmente */
+}
+
+.navbar-list {
+    list-style-type: none;
+    /* Quita los marcadores de lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Convertir la lista en un flex container */
+    align-items: center;
+    /* Centrar verticalmente */
+}
+
+.navbar-item {
+    display: inline-block;
+}
+
+.navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+}
+
+.navbar-link.selected {
+    color: #ffd700;
+    /* Cambia el color del texto cuando está seleccionado */
+}
+
+
+.navbar-link:hover {
+    color: #ccc;
+    /* Cambio de color más bajo al pasar el mouse */
+}

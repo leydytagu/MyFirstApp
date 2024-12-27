@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="left-column">
+    <mat-card class="card">
+      <mat-card-header class="card__title">
+        <mat-card-title>Transferencia Bancaria</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <form class="form" [formGroup]="formGroup">
+          <mat-form-field appearance="outline">
+            <mat-label>Nombre del beneficiario</mat-label>
+            <input matInput formControlName="beneficiaryName" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Número de cuenta del beneficiario</mat-label>
+            <input matInput formControlName="accountNumber" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Monto a transferir</mat-label>
+            <input matInput type="number" formControlName="amount" />
+          </mat-form-field>
+
+          <button mat-raised-button color="primary" (click)="submitTransfer()">
+            Realizar Transferencia
+          </button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="right-column">
+    <h2 class="json-title">Datos del Formulario</h2>
+    <code class="json-data">{{ formGroup.value | json }}</code>
+  </div>
+</div>

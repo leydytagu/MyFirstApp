@@ -1,0 +1,67 @@
+<nav class="navbar">
+  <ul class="navbar-list">
+    <li class="navbar-item">
+      <a
+        routerLink="/"
+        class="navbar-link"
+        [class.selected]="selectedLink === '/'"
+        (click)="setSelectedLink('/')"
+        >Inicio</a
+      >
+    </li>
+    <li class="navbar-item">
+      <a
+        routerLink="/card"
+        class="navbar-link"
+        [class.selected]="selectedLink === '/card'"
+        (click)="setSelectedLink('/card')"
+        >Tarjetas</a
+      >
+    </li>
+    <li class="navbar-item">
+      <a
+        routerLink="/calculator"
+        class="navbar-link"
+        [class.selected]="selectedLink === '/calculator'"
+        (click)="setSelectedLink('/calculator')"
+        >Calculadora</a
+      >
+    </li>
+    <li class="navbar-item">
+      <a
+        routerLink="/customer"
+        class="navbar-link"
+        [class.selected]="selectedLink === '/customer'"
+        (click)="setSelectedLink('/customer')"
+        >Cliente</a
+      >
+    </li>
+    <li class="navbar-item">
+      <a
+        routerLink="/order"
+        class="navbar-link"
+        [class.selected]="selectedLink === '/order'"
+        (click)="setSelectedLink('/order')"
+        >Pedido</a
+      >
+    </li>
+    <li class="navbar-item">
+      <a
+        routerLink="/form-reactive"
+        class="navbar-link"
+        [class.selected]="selectedLink === '/form-reactive'"
+        (click)="setSelectedLink('/form-reactive')"
+        >Formulario</a
+      >
+    </li>
+    <li class="navbar-item">
+      <a
+        routerLink="/transfert"
+        class="navbar-link"
+        [class.selected]="selectedLink === '/transfert'"
+        (click)="setSelectedLink('/transfert')"
+        >Transferencia Bancaria</a
+      >
+    </li>
+  </ul>
+</nav>
